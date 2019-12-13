@@ -1,16 +1,16 @@
 # WorkShop-UseLess
 
-pragma solidity ^0.4.0;
+pragma solidity ^0.5.0;
 
-contract MyFirstContract {
+contract newtry  {
+ string private name; uint private age;
 
-string private name;
-uint private age;
+function setName (string memory newName) payable public { name = newName; }   
 
-function  setName  (string newName) public {
-    name = newName;
+
+function getName () public  view  returns(string memory )  {
+    return name;
 }
-
 
 
 }
